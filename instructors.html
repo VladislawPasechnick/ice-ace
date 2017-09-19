@@ -2,117 +2,114 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Инструктора</title>
+	<title>Инструкторы</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
 </head>
 <body>
 <header class="page-header"> 
-	<a href="/" title="На главную" class="logo"><img src="img/logo.png" alt="Logo Ice Ace"> 
+	<a href="index.html" title="На главную" class="logo"><img src="img/logo.png" alt="Logo Ice Ace"> 
 	</a> 
 	<nav class="main-nav"> 
-	<ul class="main-nav-list"> 
-		<li class="main-nav-list-link"><a href="#" class="main-nav-list-link-linker">Расписание</a></li> 
-		<li class="main-nav-list-link"><a href="#" class="main-nav-list-link-linker">Инструкторы</a></li> 
-		<li class="main-nav-list-link"><a href="#" class="main-nav-list-link-linker">Стоимость</a></li> 
-		<li class="main-nav-list-link"><a href="#" class="main-nav-list-link-linker">Как добраться</a></li> 
-	</ul> 
+		<ul class="main-nav-list"> 
+			<li class="main-nav-list-link"><a href="schedule.html" class="main-nav-list-link-linker">РАСПИСАНИЕ</a></li> 
+			<li class="main-nav-list-link"><a href="#" class="main-nav-list-link-linker active">ИНСТРУКТОРЫ</a></li> 
+			<li class="main-nav-list-link"><a href="#" class="main-nav-list-link-linker">СТОИМОСТЬ</a></li> 
+			<li class="main-nav-list-link"><a href="#" class="main-nav-list-link-linker">КАК ДОБРАТЬСЯ</a></li> 
+		</ul> 
 	</nav> 
 		<a href="#" class="page-header-phone">8 (800) 808 80 80</a> 
-		<a href="" class="btn">Записаться</button> 
-</header>	
+		<div class="page-header-btn"><a href="#" class="btn">Записаться</a>
+		</div>
+
+</header>
 <main>
 
-<!-- instructors -->
+<!-- search -->
 	<h1 class="page-title">Инструкторы школы</h1>
-	
-	<input type="search">
+		<div class="search-line">
+			<input class="search" type="search" id="mysearch" placeholder="Начните вводить имя"> 
+			<a href="#"><img class="search-lupa" src="img/search_lupa.png" alt="submit"></a>
+		</div>
 
+<!-- instructors -->
 	<div class="instructors">
 		<a href="#" class="instructors-item">
 			<img src="img/instructors1.png" alt="instructors1" class="instructors-photo">
-			<span class="instructors-name">Арсений Петров</span>
+			<span class="instructor-name">Арсений Петров</span>
 		</a>
 		<a href="#" class="instructors-item">
 			<img src="img/instructors2.png" alt="instructors2" class="instructors-photo">
-			<span class="instructors-name">Minus, placeat.</span>
+			<span class="instructor-name">Minus, placeat.</span>
 		</a>
 		<a href="#" class="instructors-item">
 			<img src="img/instructors3.png" alt="instructors3" class="instructors-photo">
-			<span class="instructors-name">Степан Александров</span>
+			<span class="instructor-name">Степан Александров</span>
+		</a>
+		<a href="#" class="instructors-item-active">
+			<img src="img/instructors4.png" alt="instructors4" class="instructors-photo">
+			<span class="instructor-name">Vitae, atque.</span>
 		</a>
 		<a href="#" class="instructors-item">
-			<img src="img/instructors4.png" alt="instructors4" class="instructors-photo">
-			<span class="instructors-name">Vitae, atque.</span>
-		</a>
-		<a href="#" class="in#structors-item">
 			<img src="img/instructors5.png" alt="instructors5" class="instructors-photo">
-			<span class="instructors-name">Виталийй Сергеев</span>
+			<span class="instructor-name">Виталийй Сергеев</span>
 		</a>
 </div>
 
 	<!-- instructors profile -->
 
-	<section class="instructors-profile">
-		<div class="instructors-profile-wrape">
-				<div class="instructors-profile-sup">	
-						<img src="img/instructors4.png" alt="instructors4">
-						<div>
-							<h2 class="section-title-profile">Константин Константинопольский</h2>
-							<ul class="characteristics-profile">
-								<li>
-									<span>Спорт	</span>
-								</li>
-								<li>
-									<span>Стаж катания	</span>
-									<p>	</p>
-								</li>
-								<li>
-									<span>	Стиль</span>
-									<ul>
-										<li>
-											<a href="#">#allround</a>
-										</li>
-										<li>
-											<a href="#">#freeride</a>
-										</li>
-										<li>
-											<a href="#">#skiicross</a>
-										</li>
-									</ul>	
-								</li>
-							</ul>
-						</div>
-						<div>	
-							<a href="#" class="btn">Записаться</a>
-							<a href="#" class="btn">5</a>
-							<span>Спасибо!</span>
-						</div>
+	<section class="container-instructors-profile">
+		<section class="instructor-profile">
+			<div class="instructor-profile-buttons">
+				<a class="btn">ЗАПИСАТЬСЯ</a> 
+				<div class="btn-profile">
+					<span>5</span>
+					<p>Спасибо!</p>
 				</div>
-				<div class="instructors-profile-sub">
-					<div>
-						<h3>Образование</h3>
-						<p>Национальная лига инструкторов, сертификат инструктора 
-								по горным лыжам, г. Санкт-Петербург (2014 год). </p>
-						<p>Занимается горными лыжами с 2002 года. 
-								Первый взрослый разряд по горным лыжам — в 2010 г.
-								Опыт тренерской работы с 2012 года. </p>
-						<p>3 место на чемпионате Ленинградской области по горным лыжам. 
-							1 место на чемпионате Карелии по горным лыжам.
-						</p>
-					</div>
-					<div>
-						<img src="" alt="видео">
-					</div>
-				</div>			
-		</div>
-	</section>
+			</div>
+			<img src="img/profile-level.png" alt="konstantin photo">
+			<div class="instructor-profile-info">
+				<h2>Константин Константинопольский</h2>
+				<div class="instructor-profile-info-col">
+					<span>Спорт</span>
+					<img src="img/ski-profiles.png" alt="ski-profiles">
+				</div>
+				<div class="instructor-profile-info-col">
+					<span>Стаж катания</span>
+					<p>7 лет</p>
+				</div>
+				<div class="instructor-profile-info-col">
+					<span>Стиль</span>
+					<p>#allround<br>#freeride<br>#skiicross</p>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</section>	
 
-	<!-- review -->
+<section class="education">
+			<iframe class="education-video" width="560" height="315" src="https://www.youtube.com/embed/F5Dvq3MGabc" frameborder="0" allowfullscreen></iframe>
+			<div class="education-info">
+				<h3 class="education-title">Образование</h3>
+				<p>Национальная лига инструкторов, сертификат инструктора 
+				по горным лыжам, г. Санкт-Петербург (2014 год).</p>
+				<p>Занимается горными лыжами с 2002 года. 
+				Первый взрослый разряд по горным лыжам — в 2010 г.
+				Опыт тренерской работы с 2012 года.</p>
+				<p>3 место на чемпионате Ленинградской области по горным лыжам. 
+				1 место на чемпионате Карелии по горным лыжам.</p>
+			</div>
+			<div class="clear"></div>
+		</section>
 
+
+
+	<!-- review ------------------------------------>
+	<section class="container-review">
 	<div class="instructors-review">	
 		<h3>Марина Ильина</h3>
-		<a href="#" class="vk"></a>
+		<div class="review-vk">
+		<a href="#" class="vk"></a></div>
 		<p>Костя — отличный тренер! Провела с ним всего одно занятие, чего, в принципе, 
 			мне и было достаточно. Я и раньше занималась горными лыжами, и мне нужно было  
 			вспомнить и наверстать упущенное. Инструктор очень пунктуальный, вежливый и тактичный. 
@@ -120,68 +117,87 @@
 			за одно занятие.
 		</p>
 	</div>
+	</section>
 
-<!-- instructors img repeat -->
+<!-- instructors footer ---------------------------->
 
-<div class="instructors">
+<div class="instructors-footer">
 		<a href="#" class="instructors-item">
 			<img src="img/instructors6.png" alt="instructors6" class="instructors-photo">
-			<span class="instructors-name">Иван Артемов</span>
+			<span class="instructors-name">Иван <br>Артемов</span>
 		</a>
 		<a href="#" class="instructors-item">
 			<img src="img/instructors7.png" alt="instructors7" class="instructors-photo">
-			<span class="instructors-name">Петр Иванов</span>
+			<span class="instructors-name">Петр <br>Иванов</span>
 		</a>
 		<a href="#" class="instructors-item">
 			<img src="img/instructors8.png" alt="instructors8" class="instructors-photo">
-			<span class="instructors-name">Андрей Степанов</span>
+			<span class="instructors-name">Андрей <br>Степанов</span>
 		</a>
 		<a href="#" class="instructors-item">
 			<img src="img/instructors9.png" alt="instructors9" class="instructors-photo">
-			<span class="instructors-name">Данила Алексеев</span>
+			<span class="instructors-name">Данила <br>Алексеев</span>
 		</a>
-		<a href="#" class="in#structors-item">
+		<a href="#" class="instructors-item">
 			<img src="img/instructors10.png" alt="instructors10" class="instructors-photo">
-			<span class="instructors-name">Дмитрий Егоров</span>
+			<span class="instructors-name">Дмитрий <br>Егоров</span>
 		</a>
+		<div class="clear"></div>
 </div>
 
+</main>
 <!-- footer -->
 	<footer class="page-footer">
-		<div class="row">
-			<a href="/" title="На главную" class="logo"><img src="img/лого футер.png" alt="Logo Ice Ace"> </a>
-			<div class="social">
+		<div class="page-footer-container">
+
+			<div class="row">
+
+				<a href="index.html" title="На главную" class="logo-footer"><img 	src="img/logo_footer.png" alt="Logo Ice Ace"> </a>
+
 				<ul class="social-list">
-					<li class="social-list-l"><a href="#" class="social-link social-link-youtube"></a></li>
-					<li class="social-list-l"><a href="#" class="social-link social-link-instagram"></a></li>
-					<li class="social-list-l"><a href="#" class="social-link social-link-faccebook"></a></li>
-					<li class="social-list-l"><a href="#" class="social-link social-link-vk"></a></li>
+					<li class="social-list-l">
+						<a href="#" class="social-link youtube-logo">d</a>
+					</li>
+					<li class="social-list-l">
+						<a href="#" class="social-link instagram-logo">g</a>
+					</li>
+					<li class="social-list-l">
+						<a href="#" class="social-link facebook-logo">j</a>
+					</li>
+					<li class="social-list-l">
+						<a href="#" class="social-link vk">h</a>
+					</li>
 				</ul>
-			</div>
 			
-			<div class="contacts">
-				<a href="" class="phone-link">8 (800) 800-80-80</a>
-				<a href="" class="mail-link">hello@iceace.com</a>
-			</div>
-			
-		</div>
-		<div class="row">
-				<div class="copyright">
-					<p>© 2017 “ICE ACE” — школа сноуборда и горных лыж. Все права защищены </p>
+
+				<div class="contacts">
+					<a href="#" class="phone-link">8 (800) 800-80-80</a>
+					<a href="#" class="mail-link">hello@iceace.com</a>
 				</div>
+			
 			</div>
-			<nav class="main-nav"> 
-				<ul> 
-					<li><a href="#">Расписание</a></li> 
-					<li><a href="#">Инструкторы</a></li> 
-					<li><a href="#">Стоимость</a></li> 
-					<li><a href="#">Как добраться</a></li> 
+
+			<div class="row">
+				<p class="copyright">© 2017 “ICE ACE” — школа сноуборда и горных лыж. Все права защищены 
+				</p>
+			 
+				<ul class="main-nav-list-footer"> 
+					<li class="main-nav-list-link nav-link-footer">
+						<a href="#" class="main-nav-list-link-linker nav-linker-footer">РАСПИСАНИЕ</a>
+					</li> 
+					<li class="main-nav-list-link nav-link-footer">
+						<a href="#" class="main-nav-list-link-linker nav-linker-footer">ИНСТРУКТОРЫ</a>
+					</li> 
+					<li class="main-nav-list-link nav-link-footer">
+						<a href="#" class="main-nav-list-link-linker nav-linker-footer">СТОИМОСТЬ</a>
+					</li> 
+					<li class="main-nav-list-link nav-link-footer">
+						<a href="#" class="main-nav-list-link-linker nav-linker-footer">КАК ДОБРАТЬСЯ</a>
+					</li> 
 				</ul> 
-			</nav> 
+			</div> 
 		</div>
 
 	</footer>
-
-</main>
 </body>
 </html>

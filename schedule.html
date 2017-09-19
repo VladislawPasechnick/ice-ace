@@ -7,177 +7,210 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<!-- header -->
 <header class="page-header"> 
-  <a href="/" title="На главную" class="logo"><img src="img/logo.png" alt="Logo Ice Ace"> 
+  <a href="index.html" title="На главную" class="logo"><img src="img/logo.png" alt="Logo Ice Ace"> 
   </a> 
   <nav class="main-nav"> 
-  <ul class="main-nav-list"> 
-    <li class="main-nav-list-link"><a href="#" class="main-nav-list-link-linker">Расписание</a></li> 
-    <li class="main-nav-list-link"><a href="#" class="main-nav-list-link-linker">Инструкторы</a></li> 
-    <li class="main-nav-list-link"><a href="#" class="main-nav-list-link-linker">Стоимость</a></li> 
-    <li class="main-nav-list-link"><a href="#" class="main-nav-list-link-linker">Как добраться</a></li> 
-  </ul> 
+    <ul class="main-nav-list"> 
+      <li class="main-nav-list-link"><a href="#" class="main-nav-list-link-linker active">РАСПИСАНИЕ</a></li> 
+      <li class="main-nav-list-link"><a href="instructors.html" class="main-nav-list-link-linker">ИНСТРУКТОРЫ</a></li> 
+      <li class="main-nav-list-link"><a href="#" class="main-nav-list-link-linker">СТОИМОСТЬ</a></li> 
+      <li class="main-nav-list-link"><a href="#" class="main-nav-list-link-linker">КАК ДОБРАТЬСЯ</a></li> 
+    </ul> 
   </nav> 
     <a href="#" class="page-header-phone">8 (800) 808 80 80</a> 
-    <a href="" class="btn">Записаться</button> 
-</header> 
+    <div class="page-header-btn"><a href="#" class="btn">Записаться</a>
+    </div>
+
+</header>
+
+
 <main>
 
   <h1 class="page-title">Выбрать программу</h1>
 
 <!--  schedule -->
-<div class="wrapper-table">
-<table>
-  <tr>
-      <th>Спорт</th>
-      <th>Инструктор</th>
-      <th>Дата</th>
-      <th>Время</th>
-      <th>Стоимость</th>
-    </tr>
-  <tr>
-    <td>Сноуборд</td>
-    <td>Константин Константинопольский</td>
-    <td>30.03.2017</td>
-    <td>12:00</td>
-    <td>2000 руб.</td>
-    <td><a href="#">Записаться</a></td>
-  </tr>
-  <tr>
-   <td>Сноуборд</td>
-    <td>Константин Константинопольский</td>
-    <td>01.04.2017</td>
-    <td>12:00</td>
-    <td>2000 руб.</td>
-    <td><a href="#">Записаться</a></td>
-  </tr>
-  <tr>
-    <td>Лыжи</td>
-    <td>Степан Александров</td>
-    <td>01.04.2017</td>
-    <td>13:00</td>
-    <td>3000 руб.</td>
-    <td><a href="#">Записаться</a></td>
-  </tr>
-   <tr>
-    <td>Лыжи</td>
-    <td>Виталий Сергеев</td>
-    <td>03.04.2017</td>
-    <td>14:00</td>
-    <td>4000 руб.</td>
-    <td><a href="#">Записаться</a></td>
-  </tr>
-   <tr>
-    <td>Сноуборд</td>
-    <td>Арсений Петров</td>
-    <td>04.04.2017</td>
-    <td>14:00</td>
-    <td>4000 руб.</td>
-    <td><a href="#">Записаться</a></td>
-  </tr>
-</table>
-</div>
+<section class="schedule">
+      <table class="schedule-table">
+        <colgroup>
+          <col width="150">
+          <col>
+          <col width="150">
+          <col width="150">
+          <col width="150">
+          <col width="250">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Спорт</th>
+            <th>Инструктор</th>
+            <th>Дата</th>
+            <th>Время</th>
+            <th>Стоимость</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Сноуборд</td>
+            <td><a href="#" class="instructors-name-shed">Константин Константинопольский</a></td>
+            <td>30.03.2017</td>
+            <td>12:00</td>
+            <td>2000 руб.</td>
+            <td><a href="#" class="btn-table">ЗАПИСАТЬСЯ</a></td>
+          </tr>
+          <tr>
+            <td>Сноуборд</td>
+            <td><a href="#" class="instructors-name-shed">Константин Константинопольский</a></td>
+            <td>01.04.2017</td>
+            <td>12:00</td>
+            <td>2000 руб.</td>
+            <td><a href="#" class="btn-table">ЗАПИСАТЬСЯ</a></td>
+          </tr>
+          <tr>
+            <td>Лыжи</td>
+            <td><a href="#" class="instructors-name-shed">Степан Александров</a></td>
+            <td>01.04.2017</td>
+            <td>13:00</td>
+            <td>3000 руб.</td>
+            <td><a href="#" class="btn-table">ЗАПИСАТЬСЯ</a></td>
+          </tr>
+          <tr>
+            <td>Лыжи</td>
+            <td><a href="" class="instructors-name-shed">Виталий Сергеев</a></td>
+            <td>03.04.2017</td>
+            <td>14:00</td>
+            <td>4000 руб.</td>
+            <td><a href="#" class="btn-table">ЗАПИСАТЬСЯ</a></td>
+          </tr>
+          <tr>
+            <td>Сноуборд</td>
+            <td><a href="#" class="instructors-name-shed">Арсений Петров</a></td>
+            <td>04.04.2017</td>
+            <td>14:00</td>
+            <td>4000 руб.</td>
+            <td><a href="#" class="btn-table">ЗАПИСАТЬСЯ</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
 <!-- profile level -->
-    <section class="profile-level">
-    <div class="profile-level-wrape">
-            <img src="img/profile-level.png" alt="profile-level">
-            <div>
-              <h2 class="section-title-profile">Free ride / продвинутый уровень</h2>
-              <p>Дата занятия — 30 марта 2017 года.</p>
-              <h3>Абонемент на разовое посещение (3 часа)</h3>
-              <p>Занятие рассчитано на опытных учеников и проходит 
-                  вне подготовленной трассы, рядом с горнолыжной базой. 
-                  Катание по нетронутому снегу раскрывает все возможности 
-                  горных лыж, а опытный инструктор научит контролировать 
-                  лыжи на любой поверхности.</p>
-              <a href="#">Узнать больше</a>
-             </div>
-             <div>
-                <span>2 000 ₽</span>
-               <a class="btn">КУПИТЬ</a>
-             </div> 
-  </section>
+   <section class="profile-level">
 
-  <!-- profile-level-pages -->
-  <div class="profile-level-pages">
-    <ul>
-      <li class="active"><a href="#">1
-        </a>
-      </li>
-      <li><a href="#">2
-        </a>
-      </li>
-      <li><a href="#">3
-        </a>
-      </li>
-      <li><a href="#">4
-        </a>
-      </li>
-      <li><a href="#">5
-        </a>
-      </li>
-    </ul>
-  </div>
+      <div class="profile-level-wrape">
+
+        <div class="profile-col1">
+          <img src="img/profile-level.png" alt="Константин Константинопольский" class="profile-img">
+          <p class="profile-img-title">Константин Константинопольский</p>
+        </div>
+
+        <div class="profile-col2">
+          <h2 class="profile-title">Free ride / продвинутый уровень</h2>
+          <p>Дата занятия — 30 марта 2017 года</p>
+          <h3 class="profile-abon">Абонемент на&nbsp;разовое посещение (3 часа)</h3>
+          <p>Занятие рассчитано на&nbsp;опытных учеников и&nbsp;проходит 
+вне подготовленной трассы, рядом с&nbsp;горнолыжной базой. 
+Катание по&nbsp;нетронутому снегу раскрывает все возможности 
+горных лыж, а&nbsp;опытный инструктор научит контролировать 
+лыжи на&nbsp;любой поверхности.</p>
+          <a href="#" class="profile-more main-nav-list-link-linker">Узнать больше</a>
+        </div>
+
+        <div class="profile-col3">
+          <p class="profile-price">2&nbsp;000&nbsp;₽</p>
+          <a href="#" class="btn btn-profile-private">Купить</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- profile-level-pages -->
+
+    <div class="container-profile-level-pages">
+      <ul class="profile-level-pages">
+        <li class="pagination-item"><a href="#" class="pagination-link"> <img class="prev" src="img/Prev.png" alt="prev"></a></li>
+        <li class="pagination-item"><a class="pagination-link pagination-link-active">1</a></li>
+        <li class="pagination-item"><a href="#" class="pagination-link">2</a></li>
+        <li class="pagination-item"><a href="#" class="pagination-link">3</a></li>
+        <li class="pagination-item"><a href="#" class="pagination-link">4</a></li>
+        <li class="pagination-item"><a href="#" class="pagination-link">5</a></li>
+        <li class="pagination-item"><a href="#" class="pagination-link"><img src="img/next.png" alt="next"></a></li>
+      </ul>
+    </div>
+
 
   <!-- form -->
-  <div class="wrapper"> 
-    <form>
-       <p>
-        <label for="last_name"><input type="text" size='10' id="last_name"> *Имя
-        </label>
-      </p>
-      <p>
-        <label for="first_name">
-          <input type="text" size='10' id="first_name"> *Фамилия
-        </label>
-      </p>
-      <p>
-        <label for="phone"><input type="text" size='10' id="phone"> *Телефон
-        </label>
-      </p>
-      <p>
-        <label for="message"><input type="text" size='10' id="message"> Ваше сообщение
-        </label>
-      </p>
-      <p><input type="submit" value='Отправить'></p>
-    </form>
-  </div>
-
+<section class="form">
+      <div class="form-info">
+        <span>Заказать обратный звонок</span>
+        <form>
+          <label for="name"><p>*имя</p></label>
+          <input type="text" id="name">
+          <label for="surname"><p>*Фамилия</p></label>
+          <input type="text" id="surname">
+          <label for="cell"><p>*Телефон</p></label>
+          <input type="text" id="cell">
+          <label for="comment"><p>Ваше сообщение</p></label>
+          <textarea id="comment"></textarea>
+        </form>
+      </div>
+      <a href="#" class="btn">ОТПРАВИТЬ</a>
+    </section>
+</section>
   
 
 <!-- footer -->
- <footer class="page-footer">
-    <div class="row">
-      <a href="/" title="На главную" class="logo"><img src="img/лого футер.png" alt="Logo Ice Ace"> </a>
-      <div class="social">
+<footer class="page-footer">
+    <div class="page-footer-container">
+
+      <div class="row">
+
+        <a href="index.html" title="На главную" class="logo-footer"><img   src="img/logo_footer.png" alt="Logo Ice Ace"> </a>
+
         <ul class="social-list">
-          <li class="social-list-l"><a href="#" class="social-link social-link-youtube"></a></li>
-          <li class="social-list-l"><a href="#" class="social-link social-link-instagram"></a></li>
-          <li class="social-list-l"><a href="#" class="social-link social-link-faccebook"></a></li>
-          <li class="social-list-l"><a href="#" class="social-link social-link-vk"></a></li>
+          <li class="social-list-l">
+            <a href="#" class="social-link youtube-logo">d</a>
+          </li>
+          <li class="social-list-l">
+            <a href="#" class="social-link instagram-logo">g</a>
+          </li>
+          <li class="social-list-l">
+            <a href="#" class="social-link facebook-logo">j</a>
+          </li>
+          <li class="social-list-l">
+            <a href="#" class="social-link vk">h</a>
+          </li>
         </ul>
-      </div>
       
-      <div class="contacts">
-        <a href="" class="phone-link">8 (800) 800-80-80</a>
-        <a href="" class="mail-link">hello@iceace.com</a>
-      </div>
-      
-    </div>
-    <div class="row">
-        <div class="copyright">
-          <p>© 2017 “ICE ACE” — школа сноуборда и горных лыж. Все права защищены </p>
+
+        <div class="contacts">
+          <a href="#" class="phone-link">8 (800) 800-80-80</a>
+          <a href="#" class="mail-link">hello@iceace.com</a>
         </div>
+      
       </div>
-      <nav class="main-nav"> 
-        <ul> 
-          <li><a href="#">Расписание</a></li> 
-          <li><a href="#">Инструкторы</a></li> 
-          <li><a href="#">Стоимость</a></li> 
-          <li><a href="#">Как добраться</a></li> 
+
+      <div class="row">
+        <p class="copyright">© 2017 “ICE ACE” — школа сноуборда и горных лыж. Все права защищены 
+        </p>
+       
+        <ul class="main-nav-list-footer"> 
+          <li class="main-nav-list-link nav-link-footer">
+            <a href="#" class="main-nav-list-link-linker nav-linker-footer">РАСПИСАНИЕ</a>
+          </li> 
+          <li class="main-nav-list-link nav-link-footer">
+            <a href="#" class="main-nav-list-link-linker nav-linker-footer">ИНСТРУКТОРЫ</a>
+          </li> 
+          <li class="main-nav-list-link nav-link-footer">
+            <a href="#" class="main-nav-list-link-linker nav-linker-footer">СТОИМОСТЬ</a>
+          </li> 
+          <li class="main-nav-list-link nav-link-footer">
+            <a href="#" class="main-nav-list-link-linker nav-linker-footer">КАК ДОБРАТЬСЯ</a>
+          </li> 
         </ul> 
-      </nav> 
+      </div> 
     </div>
 
   </footer>
